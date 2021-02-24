@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>#WDRU</title>
+		<meta name="description" content="What Dog R U?">
+		<meta name="author" content="benolayinka">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+		<link rel="manifest" href="/icon/site.webmanifest">
+		<link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/icon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/icon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="css/main.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
+			<defs>
+				<filter id="f1">
+					<feGaussianBlur stdDeviation="3"/>
+				</filter>
+			</defs>
+		</svg>
+		<div class="vw-100 vh-100">
+			<div id="grid" class="grid">
+				<template id="question-square">
+					<div class="square">
+						<div class="square-content">
+							<div class="question h-100 v-100 h-center v-center">
+								<div class="lottie-loader">
+									<div class="lottie-fade">
+									</div>
+									<div class="lottie-align">
+										<lottie-player class="lottie" src="https://assets5.lottiefiles.com/temp/lf20_tsdGdl.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay>
+											
+										</lottie-player>
+									</div>
+								</div>
+								<form>
+									<fieldset class="h-center">
+										<legend class="legend text-center truncate">question?
+										</legend>
+										<div class="radio-container">
+											<template id="answer">
+												<div class="answer">
+													<input class="radio-input" type="radio" id="template-id" value="template-value" name="template-name">
+													<label class="radio-label truncate text-center" for="template-id">
+														answer
+													</label>
+												</div>
+											</template>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</template>
+			</div>
+		</div>
+
+		<script src="js/questions.js"></script>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	</body>
+</html>
